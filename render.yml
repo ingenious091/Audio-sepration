@@ -1,0 +1,4 @@
+services:
+  - type: web
+    buildCommand: conda env create -n test-env -f=environment.yml
+    startCommand: conda run -n test-env node server.js
